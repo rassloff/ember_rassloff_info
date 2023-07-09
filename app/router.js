@@ -7,5 +7,11 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  this.route('blog', function () {});
+  this.route('blog', function () {
+    this.route('edit');
+  });
+
+  this.route('blogs', function () {
+    this.route('add');
+  });
 });

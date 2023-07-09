@@ -3,7 +3,7 @@
   @backgroundColor="light"
   as |navbar|
 >
-  <LinkTo @route="index" class="navbar-brand">Brand</LinkTo>
+  <LinkTo @route="index" class="navbar-brand">Rassloff Ember-JS Testing</LinkTo>
   <navbar.toggle/>
   <navbar.content>
     <navbar.nav as |nav|>
@@ -11,7 +11,10 @@
         <nav.link-to @route="index">Home</nav.link-to>
       </nav.item>
       <nav.item>
-        <nav.link-to @route="blog.index">Navbars</nav.link-to>
+        <nav.link-to @route="blog.index">Blog</nav.link-to>
+      </nav.item>
+       <nav.item>
+        <nav.link-to @route="blogs.index">Blogs</nav.link-to>
       </nav.item>
       <nav.dropdown as |dd|>
         <dd.toggle>Dropdown <span class="caret"></span></dd.toggle>
@@ -31,7 +34,6 @@
 {{page-title "EmberRassloffInfo"}}
 
 {{!-- The following component displays Ember's default welcome message. --}}
-<h1>Ember Start Page</h1>
-{{!-- Feel free to remove this! --}}
+
 
 {{outlet}}
